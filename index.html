@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Prapti Das — Digital Marketer &amp; Growth Strategist</title>
+<meta name="description" content="Portfolio of Prapti Das, Digital Marketer and Growth Strategist based in Bengaluru."/>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="global-nav">
+  <div class="nav-brand" onclick="showPage('home')">Prapti Das</div>
+  <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a id="nav-home"      onclick="showPage('home')"      href="#">Home</a></li>
+    <li><a id="nav-resume"    onclick="showPage('resume')"    href="#">Resume</a></li>
+    <li><a id="nav-portfolio" onclick="showPage('portfolio')" href="#">Portfolio</a></li>
+    <li><a id="nav-blog"      onclick="showPage('blog')"      href="#">Blog</a></li>
+  </ul>
+</nav>
+
+<!-- ============================================================
+     PAGE: HOME
+     ============================================================ -->
+<div id="page-home" class="page">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-lightning"></div>
+    <div class="hero-lightning"></div>
+    <div class="hero-lightning"></div>
+
+    <!-- Bats -->
+    <div class="bat" style="top:18%">
+      <svg width="38" height="22" viewBox="0 0 40 24"><path d="M20 12C16 6 8 2 0 4c6 4 10 8 10 8S6 8 4 14c4-2 10 0 16 6 6-6 12-8 16-6-2-6-6-4-6-4s4-4 10-8c-8-2-16 2-20 10z"/></svg>
+    </div>
+    <div class="bat" style="top:36%">
+      <svg width="28" height="18" viewBox="0 0 40 24"><path d="M20 12C16 6 8 2 0 4c6 4 10 8 10 8S6 8 4 14c4-2 10 0 16 6 6-6 12-8 16-6-2-6-6-4-6-4s4-4 10-8c-8-2-16 2-20 10z"/></svg>
+    </div>
+    <div class="bat" style="top:10%">
+      <svg width="22" height="14" viewBox="0 0 40 24"><path d="M20 12C16 6 8 2 0 4c6 4 10 8 10 8S6 8 4 14c4-2 10 0 16 6 6-6 12-8 16-6-2-6-6-4-6-4s4-4 10-8c-8-2-16 2-20 10z"/></svg>
+    </div>
+
+    <!-- Candles -->
+    <div class="candle-wrap left" aria-hidden="true">
+      <div class="flame"><div class="flame-o"></div><div class="flame-i"></div><div class="flame-glow"></div></div>
+      <div class="candle-wick"></div>
+      <div class="candle-body"></div>
+    </div>
+    <div class="candle-wrap right" aria-hidden="true">
+      <div class="flame"><div class="flame-o"></div><div class="flame-i"></div><div class="flame-glow"></div></div>
+      <div class="candle-wick"></div>
+      <div class="candle-body"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Digital Marketer &bull; Growth Strategist &bull; Bengaluru</p>
+      <h1 class="hero-title"><span class="gold">Prapti</span><br>Das</h1>
+      <p class="hero-sub">Growth is a craft. Every campaign tells a story.</p>
+      <p class="hero-tag">Brands &nbsp;&bull;&nbsp; Campaigns &nbsp;&bull;&nbsp; Funnels &nbsp;&bull;&nbsp; Communities</p>
+      <div class="hero-btns">
+        <button class="btn btn-primary" onclick="showPage('portfolio')">See My Work</button>
+        <button class="btn btn-outline" onclick="showPage('resume')">View Resume</button>
+      </div>
+    </div>
+
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <div class="about-wrap">
+    <div class="reveal">
+      <p class="section-label">About</p>
+      <h2 class="section-title">Marketing that <em>moves</em> people.</h2>
+    </div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I am a growth marketer based in Bengaluru. My work lives at the intersection of data and creativity, where a well-placed piece of content can do as much work as a paid campaign, and a clean funnel can turn a casual visitor into a loyal customer.</p>
+        <p>Across five startups spanning events, fashion, real estate, ed-tech, and marketing tech, I have run end-to-end campaigns, managed creator pipelines, built landing pages, and tracked every click back to its source. I care about the numbers, and the story behind them.</p>
+        <p>Right now I lead content strategy as R&D Head at Synapse, Christ University, while competing in inter-collegiate business fests at an 86% win rate.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat"><div class="stat-num">10K+</div><div class="stat-lbl">App Downloads Driven</div></div>
+        <div class="stat"><div class="stat-num">86%</div><div class="stat-lbl">Inter-Fest Win Rate</div></div>
+        <div class="stat"><div class="stat-num">5+</div><div class="stat-lbl">Startups Worked With</div></div>
+        <div class="stat"><div class="stat-num">3K</div><div class="stat-lbl">Followers Grown in 3 Months</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+  <div class="carousel-wrap reveal">
+    <div class="section-label" style="margin-bottom:1rem;">Featured Creative Work</div>
+    <h2 class="section-title" style="margin-bottom:1.8rem;">Recent <em>campaigns</em>.</h2>
+    <div class="carousel-inner">
+      <div class="carousel-track" id="carousel-track">
+        <div class="carousel-slide">
+          <img src="assets/carousel1.jpg" alt="Everybody Smashes — Smash Burger Campaign" loading="lazy"/>
+          <div class="carousel-caption"><p>"Everybody Smashes." Social-first creative for Smash Burger, built around cultural references and pop-culture hooks.</p></div>
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/carousel2.jpg" alt="One Bite — Smash Burger" loading="lazy"/>
+          <div class="carousel-caption"><p>"One Bite. You'll Know." Fan reactions layered with bold typography for maximum organic reach.</p></div>
+        </div>
+        <div class="carousel-slide">
+          <img src="assets/carousel3.jpg" alt="When The Burger Hits Different" loading="lazy"/>
+          <div class="carousel-caption"><p>"When The Burger Hits Different" — Instagram-native social mockup designed for engagement and shareability.</p></div>
+        </div>
+      </div>
+      <button class="carousel-btn prev" onclick="moveCarousel(-1)" aria-label="Previous">&#8592;</button>
+      <button class="carousel-btn next" onclick="moveCarousel(1)" aria-label="Next">&#8594;</button>
+    </div>
+    <div class="carousel-dots">
+      <button class="c-dot active" onclick="goTo(0);resetAuto()" aria-label="Slide 1"></button>
+      <button class="c-dot" onclick="goTo(1);resetAuto()" aria-label="Slide 2"></button>
+      <button class="c-dot" onclick="goTo(2);resetAuto()" aria-label="Slide 3"></button>
+    </div>
+  </div>
+
+  <!-- What I Do -->
+  <div class="skills-wrap">
+    <div class="reveal">
+      <p class="section-label">What I Do</p>
+      <h2 class="section-title">The full <em>range</em>.</h2>
+    </div>
+    <div class="divider reveal"><div class="divider-line"></div><span class="divider-sym">&#10022;</span><div class="divider-line"></div></div>
+    <div class="skills-grid reveal">
+      <div class="skill-card">
+        <div class="skill-card-icon">&#128200;</div>
+        <h3>Campaign Strategy</h3>
+        <p>Full-funnel campaigns from awareness to conversion. Scaled apps to 10K+ downloads in a single month.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">&#128204;</div>
+        <h3>Content and Brand</h3>
+        <p>Copy, content pillars, and creative assets that stop the scroll. Brand voice in every caption, every post.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">&#128202;</div>
+        <h3>Analytics and Growth</h3>
+        <p>A/B testing, funnel drop-off analysis, and data-to-decision work that moves revenue, not just metrics.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">&#127919;</div>
+        <h3>Influencer and Creator Ops</h3>
+        <p>Identifying, onboarding, and managing creators. Matching the right voice to the right brand at the right time.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">&#128279;</div>
+        <h3>SEO and Performance</h3>
+        <p>Optimising listings, landing pages, and ad creatives. Organic growth and paid acquisition working together.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-icon">&#127942;</div>
+        <h3>Cross-Functional Work</h3>
+        <p>Keeping product, design, and client teams aligned on KPIs. Good marketing does not happen in a silo.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-mini reveal">
+    <div class="footer-name">Prapti Das</div>
+    <div class="footer-sub">Growth is a craft. Every campaign tells a story.</div>
+    <div class="footer-copy">&copy; 2025 Prapti Das &mdash; Bengaluru, India</div>
+  </footer>
+
+</div><!-- /page-home -->
+
+
+<!-- ============================================================
+     PAGE: RESUME
+     ============================================================ -->
+<div id="page-resume" class="page">
+
+  <!-- Golden Snitch Easter Egg -->
+  <div class="snitch" id="snitch" title="Click me!" role="button" aria-label="Golden Snitch">
+    <div class="snitch-wing l"></div>
+    <div class="snitch-body"></div>
+    <div class="snitch-wing r"></div>
+  </div>
+
+  <div class="resume-hero reveal">
+    <p class="resume-hero-label">Professional Profile</p>
+    <h1>Prapti Das</h1>
+    <p>Digital Marketer &amp; Growth Strategist</p>
+    <p class="resume-contact">Bengaluru, India &nbsp;&bull;&nbsp; <a href="https://linkedin.com/in/praptid2006" target="_blank" rel="noopener">linkedin.com/in/praptid2006</a></p>
+  </div>
+
+  <div class="resume-body">
+
+    <!-- Experience -->
+    <div class="resume-section reveal">
+      <h2 class="resume-section-head"><span>&#9770;</span> Work Experience</h2>
+
+      <div class="exp-row">
+        <div><div class="exp-role">R&D Head</div><div class="exp-co">Synapse &mdash; Christ University, Bengaluru</div></div>
+        <div class="exp-date">Jan 2025 &mdash; Mar 2026</div>
+        <ul class="exp-bullets">
+          <li>Led content strategy and research-driven campaigns, launching a social media series that reached 10K+ views and grew the club's following by 3K in three months.</li>
+          <li>Ran branding workshops and skill-building sessions to build internal campaign execution capacity.</li>
+          <li>Defined the content calendar, coordinated with design, and monitored performance to iterate on results.</li>
+        </ul>
+      </div>
+
+      <div class="exp-row">
+        <div><div class="exp-role">Growth Marketing Intern</div><div class="exp-co">Solid Corp (MarTech), Bengaluru</div></div>
+        <div class="exp-date">Sept 2025 &mdash; Jan 2026</div>
+        <ul class="exp-bullets">
+          <li>Led growth marketing for key clients, improving ROI through sharper audience targeting and creative iteration.</li>
+          <li>Ran A/B testing across ad creatives and landing pages, using funnel analytics to fix conversion drop-offs.</li>
+          <li>Coordinated between product, design, and client teams to keep campaigns aligned with KPI goals.</li>
+        </ul>
+      </div>
+
+      <div class="exp-row">
+        <div><div class="exp-role">Growth and Operations Intern</div><div class="exp-co">Propalyst (Real Estate Tech), Bengaluru</div></div>
+        <div class="exp-date">Sept 2025 &mdash; Jan 2026</div>
+        <ul class="exp-bullets">
+          <li>Streamlined property listings by coordinating with brokers and managing verification workflows.</li>
+          <li>Enhanced backend efficiency through structured processes and accurate data maintenance.</li>
+          <li>Supported listing content, local SEO, and campaign tracking initiatives.</li>
+        </ul>
+      </div>
+
+      <div class="exp-row">
+        <div><div class="exp-role">Growth and Marketing Intern</div><div class="exp-co">Darshe (Premium Fashion), Bengaluru</div></div>
+        <div class="exp-date">Sept 2025 &mdash; Nov 2025</div>
+        <ul class="exp-bullets">
+          <li>Managed the founder's social media presence, leading content planning and community engagement.</li>
+          <li>Built a pre-launch marketing roadmap covering content pillars and influencer coordination.</li>
+          <li>Drove organic growth through performance analytics, SEO, and hashtag strategy.</li>
+        </ul>
+      </div>
+
+      <div class="exp-row">
+        <div><div class="exp-role">Marketing and Social Media Intern</div><div class="exp-co">Aavo (Event Management), Bengaluru</div></div>
+        <div class="exp-date">Sept 2024 &mdash; April 2025</div>
+        <ul class="exp-bullets">
+          <li>Led digital campaigns scaling Aavo to 10K+ downloads and 1K+ followers within one month.</li>
+          <li>Conducted user behaviour analysis to identify growth levers and optimise engagement.</li>
+          <li>Created high-performing marketing assets and community-focused brand content.</li>
+        </ul>
+      </div>
+
+      <div class="exp-row">
+        <div><div class="exp-role">Growth Intern</div><div class="exp-co">GenAIPeople (Ed Tech), Bengaluru</div></div>
+        <div class="exp-date">Dec 2025 &mdash; Present</div>
+        <ul class="exp-bullets">
+          <li>Drove paid acquisition by developing and deploying digital ad creatives across channels.</li>
+          <li>Strengthened digital presence by building and optimising core web and landing assets.</li>
+          <li>Supported growth through performance monitoring and cross-functional execution.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="resume-section reveal">
+      <h2 class="resume-section-head"><span>&#9733;</span> Leadership &amp; Achievements</h2>
+
+      <div class="exp-row">
+        <div><div class="exp-role">Business Festing Team Member</div><div class="exp-co">CUSBMA, Christ University</div></div>
+        <div class="exp-date">July 2025 &mdash; Present</div>
+        <ul class="exp-bullets">
+          <li>Competed in 10+ inter-collegiate business fests with an 86% win rate, leading team coordination and event strategy.</li>
+          <li>Handled on-ground execution under high-pressure, multi-competition conditions.</li>
+        </ul>
+      </div>
+
+      <div class="exp-row">
+        <div><div class="exp-role">2nd Runner-Up &mdash; Aagaz (Street Play)</div><div class="exp-co">Mood Indigo, IIT Bombay &mdash; Play: "Charitra Ka Chitra"</div></div>
+        <div class="exp-date">Dec 2025</div>
+        <ul class="exp-bullets">
+          <li>Secured 3rd place in the street play category at Mood Indigo, one of Asia's largest college cultural festivals.</li>
+          <li>Member of Zariya Productions; contributed to graphic design and poster work alongside performance.</li>
+        </ul>
+      </div>
+
+      <div class="exp-row">
+        <div><div class="exp-role">3rd Position &mdash; Marketing Category</div><div class="exp-co">Cross-Currents, Mount Carmel College</div></div>
+        <div class="exp-date">Nov 2024</div>
+        <ul class="exp-bullets">
+          <li>Earned placement for campaign ideation, brand positioning, and pitch performance.</li>
+        </ul>
+      </div>
+
+      <div class="exp-row">
+        <div><div class="exp-role">Secretary General</div><div class="exp-co">BVBPSMUN, Hyderabad</div></div>
+        <div class="exp-date">Aug 2023</div>
+        <ul class="exp-bullets">
+          <li>Led conference operations, chaired committees, and coordinated delegate management for the school's Model UN.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="resume-section reveal">
+      <h2 class="resume-section-head"><span>&#9774;</span> Skills</h2>
+      <div class="skills-3col">
+        <div>
+          <p class="skill-group-title">Marketing and Growth</p>
+          <div class="tag-list">
+            <span class="tag">Campaign Strategy</span><span class="tag">Growth Marketing</span><span class="tag">Funnel Analytics</span><span class="tag">A/B Testing</span><span class="tag">Influencer Ops</span><span class="tag">Creator Onboarding</span><span class="tag">SEO</span><span class="tag">Paid Acquisition</span><span class="tag">Content Strategy</span><span class="tag">Social Media</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-title">Technical</p>
+          <div class="tag-list">
+            <span class="tag">Python</span><span class="tag">Microsoft Office</span><span class="tag">Meta Ads</span><span class="tag">Google Analytics</span><span class="tag">Canva</span><span class="tag">Landing Pages</span>
+          </div>
+        </div>
+        <div>
+          <p class="skill-group-title">Soft Skills</p>
+          <div class="tag-list">
+            <span class="tag">Public Speaking</span><span class="tag">Creative Writing</span><span class="tag">Strategy</span><span class="tag">Time Management</span><span class="tag">Graphic Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="resume-section reveal">
+      <h2 class="resume-section-head"><span>&#9775;</span> Certifications</h2>
+      <ul class="exp-bullets">
+        <li>Introduction to AI &mdash; Infosys</li>
+        <li>Generative AI Professional &mdash; Oracle</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer class="footer-mini reveal">
+    <div class="footer-name">Prapti Das</div>
+    <div class="footer-sub">Growth is a craft. Every campaign tells a story.</div>
+    <div class="footer-copy">&copy; 2025 Prapti Das</div>
+  </footer>
+
+</div><!-- /page-resume -->
+
+
+<!-- ============================================================
+     PAGE: PORTFOLIO
+     ============================================================ -->
+<div id="page-portfolio" class="page">
+
+  <!-- Hero with backward clock and steam -->
+  <div class="port-hero">
+    <svg class="clock-bg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="100" cy="100" r="3" fill="currentColor"/>
+      <line x1="100" y1="12" x2="100" y2="26" stroke="currentColor" stroke-width="3"/>
+      <line x1="100" y1="174" x2="100" y2="188" stroke="currentColor" stroke-width="3"/>
+      <line x1="12" y1="100" x2="26" y2="100" stroke="currentColor" stroke-width="3"/>
+      <line x1="174" y1="100" x2="188" y2="100" stroke="currentColor" stroke-width="3"/>
+      <line id="clock-hour" x1="100" y1="100" x2="100" y2="58" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <line id="clock-minute" x1="100" y1="100" x2="100" y2="38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    <div class="steam-cont" aria-hidden="true">
+      <div class="steam-p"></div><div class="steam-p"></div><div class="steam-p"></div>
+    </div>
+    <p class="section-label">Work and Aspirations</p>
+    <h1 class="section-title" style="font-size:clamp(2.5rem,6vw,5rem);font-weight:900;">The <em>Portfolio</em></h1>
+    <p style="font-family:var(--f-fell);font-style:italic;font-size:1.05rem;color:var(--mist);opacity:0.6;margin-top:0.6rem;">Some things are built. Some are earned. All of them took longer than a coffee.</p>
+  </div>
+
+  <!-- Campaign Work -->
+  <div class="port-section">
+    <div class="reveal">
+      <p class="section-label">Campaign Work</p>
+      <h2 class="section-title">What I have <em>built</em> so far.</h2>
+    </div>
+
+    <!-- Portfolio image grid -->
+    <div class="port-grid reveal">
+      <div class="port-item large">
+        <img src="assets/carousel1.jpg" alt="Smash Burger Campaign — Everybody Smashes" loading="lazy"/>
+        <div class="port-overlay">
+          <span class="port-tag">Social Media &bull; Creative Direction</span>
+          <div class="port-title">Smash Burger: Everybody Smashes</div>
+        </div>
+      </div>
+      <div class="port-item">
+        <img src="assets/carousel2.jpg" alt="One Bite" loading="lazy"/>
+        <div class="port-overlay">
+          <span class="port-tag">Brand &bull; Typography</span>
+          <div class="port-title">One Bite. You'll Know.</div>
+        </div>
+      </div>
+      <div class="port-item">
+        <img src="assets/zariya-poster.jpg" alt="Zariya Productions — Izzat Ka Saudagar" loading="lazy"/>
+        <div class="port-overlay">
+          <span class="port-tag">Event &bull; Graphic Design</span>
+          <div class="port-title">Zariya Productions: Street Play Poster</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Campaign write-ups -->
+    <div class="reveal">
+      <div class="camp-card">
+        <p class="camp-card-label">Aavo Event Management &bull; 2024&ndash;2025</p>
+        <h3>Scaling an event app from zero to 10K downloads</h3>
+        <p>When I joined Aavo, the app had a product and almost no audience. I built the digital campaign strategy from scratch, identified the right communities, created a content system that kept posting consistent, and ran user behaviour analysis to understand what was converting. Within one month, we hit 10K downloads and crossed 1K followers. Distribution is as important as the product itself.</p>
+      </div>
+      <div class="camp-card">
+        <p class="camp-card-label">Synapse, Christ University &bull; 2025&ndash;2026</p>
+        <h3>Building a content engine that reached 10K views</h3>
+        <p>As R&D Head at Synapse, I launched a research-led social media series. It reached 10K+ views and added 3K followers in three months. The work was not about posting more; it was about posting with a point of view, backed by data, timed around what the audience cared about.</p>
+      </div>
+      <div class="camp-card">
+        <p class="camp-card-label">Solid Corp MarTech &bull; 2025&ndash;2026</p>
+        <h3>A/B testing and funnel analytics for client accounts</h3>
+        <p>At Solid Corp I worked across multiple client accounts, running A/B tests on ad creatives and landing pages, reading funnel analytics, and feeding insights back into targeting. Getting the invisible infrastructure right is the difference between a campaign that looks good and one that actually performs.</p>
+      </div>
+    </div>
+
+    <!-- Zariya creative section -->
+    <div class="reveal" style="margin-top:3rem;">
+      <p class="section-label">Creative Work</p>
+      <h2 class="section-title">Zariya Productions &mdash; <em>Street Play</em></h2>
+      <p style="font-size:1rem;color:var(--mist);opacity:0.82;max-width:700px;margin-top:1rem;line-height:1.8;">
+        Member of Zariya Productions. The play "Charitra Ka Chitra" won 2nd Runner-Up at Mood Indigo 2025, IIT Bombay. I contributed to graphic design and poster work alongside performance.
+      </p>
+      <div style="margin-top:1.8rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:800px;">
+        <div class="port-item" style="max-height:400px;overflow:hidden;">
+          <img src="assets/zariya-poster.jpg" alt="Zariya Productions poster" style="height:400px;object-fit:cover;width:100%;" loading="lazy"/>
+        </div>
+        <div style="display:flex;flex-direction:column;justify-content:center;gap:1rem;">
+          <div class="camp-card" style="margin:0;">
+            <p class="camp-card-label">Mood Indigo, IIT Bombay &bull; Dec 2025</p>
+            <h3 style="font-size:1.05rem;">2nd Runner-Up &mdash; Aagaz Street Play</h3>
+            <p style="font-size:0.9rem;">One of Asia's largest cultural festivals. The team brought "Charitra Ka Chitra" to a live audience and placed in the top 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /campaign work -->
+
+  <!-- Video Work -->
+  <div class="port-section" style="background:rgba(201,168,76,0.02);border-top:1px solid rgba(201,168,76,0.08);border-bottom:1px solid rgba(201,168,76,0.08);">
+    <div class="reveal">
+      <p class="section-label">Video Work</p>
+      <h2 class="section-title">Motion &amp; <em>storytelling</em>.</h2>
+    </div>
+    <div class="video-grid reveal">
+      <div class="video-box">
+        <video src="assets/storytelling.mp4" controls muted playsinline preload="metadata"></video>
+        <div class="video-label">Storytelling</div>
+      </div>
+      <div class="video-box">
+        <video src="assets/event_reel.mp4" controls muted playsinline preload="metadata"></video>
+        <div class="video-label">Event Reel</div>
+      </div>
+      <div class="video-box">
+        <video src="assets/fast_paced_edit.mp4" controls muted playsinline preload="metadata"></video>
+        <div class="video-label">Fast-Paced Edit</div>
+      </div>
+      <div class="video-box">
+        <video src="assets/montage.mp4" controls muted playsinline preload="metadata"></video>
+        <div class="video-label">Montage</div>
+      </div>
+      <div class="video-box">
+        <video src="assets/storyboard.mp4" controls muted playsinline preload="metadata"></video>
+        <div class="video-label">Storyboard</div>
+      </div>
+      <div class="video-box">
+        <video src="assets/typography_based.mp4" controls muted playsinline preload="metadata"></video>
+        <div class="video-label">Typography-Based</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aspirations -->
+  <div class="port-section reveal">
+    <p class="section-label">Where I Want to Go</p>
+    <h2 class="section-title">Industries that <em>excite</em> me.</h2>
+    <p style="font-size:1rem;color:var(--mist);opacity:0.8;max-width:650px;margin-top:1rem;margin-bottom:0;line-height:1.8;">Good marketing requires genuine obsession with the product. These are the three industries I am genuinely obsessed with.</p>
+    <div class="aspire-grid" style="margin-top:2rem;">
+      <div class="aspire-card">
+        <div class="aspire-icon">&#127916;</div>
+        <h3>Film and Entertainment</h3>
+        <p>I watch a lot of films and have opinions about how they are marketed. A trailer can make or break a release. A well-timed social moment can turn a mid-budget film into a cultural event. I want to work on those campaigns, from theatrical releases to OTT drops.</p>
+      </div>
+      <div class="aspire-card">
+        <div class="aspire-icon">&#128084;</div>
+        <h3>Fashion and Lifestyle</h3>
+        <p>I worked with Darshe, a premium fashion brand, building their social presence and pre-launch roadmap. The work that interests me most is brand positioning. The difference between a label that is just a product and one that carries an identity is almost entirely a marketing problem.</p>
+      </div>
+      <div class="aspire-card">
+        <div class="aspire-icon">&#9749;</div>
+        <h3>Food and Hospitality</h3>
+        <p>The Smash Burger creative work showed me how much range exists in food content when you approach it with real intent. The best restaurant and cafe marketing does not sell a menu; it sells a ritual. I want to build that kind of audience loyalty for a food brand.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-mini reveal">
+    <div class="footer-name">Prapti Das</div>
+    <div class="footer-sub">Growth is a craft. Every campaign tells a story.</div>
+    <div class="footer-copy">&copy; 2025 Prapti Das &mdash; Bengaluru, India</div>
+  </footer>
+
+</div><!-- /page-portfolio -->
+
+
+<!-- ============================================================
+     PAGE: BLOG
+     ============================================================ -->
+<div id="page-blog" class="page">
+
+  <!-- Rune background (Mortal Instruments nod) -->
+  <div class="runes-bg" aria-hidden="true">
+    <span class="rune" style="top:8%;left:4%;animation-delay:0s;">&#9775;</span>
+    <span class="rune" style="top:28%;right:7%;animation-delay:3.5s;font-size:6rem;">&#9771;</span>
+    <span class="rune" style="top:55%;left:2%;animation-delay:6s;font-size:3.5rem;">&#9773;</span>
+    <span class="rune" style="top:72%;right:4%;animation-delay:2s;">&#9772;</span>
+  </div>
+
+  <div class="blog-hero reveal">
+    <p class="section-label">The Blog</p>
+    <h1 class="section-title" style="font-size:clamp(2.5rem,6vw,5rem);font-weight:900;">Things I am <em>thinking</em> about.</h1>
+    <p style="font-family:var(--f-fell);font-style:italic;font-size:1.05rem;color:var(--mist);opacity:0.58;margin-top:0.6rem;">Marketing, storytelling, and whatever the algorithm refuses to touch.</p>
+  </div>
+
+  <div class="blog-layout">
+    <!-- Posts -->
+    <div class="blog-posts">
+
+      <article class="blog-post reveal">
+        <div class="post-meta">
+          <span class="post-cat">Growth Marketing</span>
+          <span class="post-date">March 2025</span>
+        </div>
+        <h2 class="post-title">Why distribution beats the product, almost every time.</h2>
+        <p class="post-excerpt">When I joined Aavo, the product worked fine. The problem was that nobody knew it existed. Within a month, 10K downloads later, the lesson was clear: how you get a product in front of people matters as much as the product itself. Most early-stage teams build and then figure out distribution. The ones that win bake distribution into the product from day one.</p>
+        <a href="#" class="read-more">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-post reveal">
+        <div class="post-meta">
+          <span class="post-cat">Copywriting</span>
+          <span class="post-date">January 2025</span>
+        </div>
+        <h2 class="post-title">Copy is not decoration. It is the campaign.</h2>
+        <p class="post-excerpt">Marketing teams treat words as filler between the logo and the call-to-action button. That is where most campaigns quietly die. The best copywriters understand that a single sentence, if it lands right, carries weeks of brand-building in under ten words. Restraint is not a limitation; it is the skill. Most briefs ask for more words. The right answer is almost always fewer.</p>
+        <a href="#" class="read-more">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-post reveal">
+        <div class="post-meta">
+          <span class="post-cat">Strategy</span>
+          <span class="post-date">November 2024</span>
+        </div>
+        <h2 class="post-title">The rarest thing in marketing: a brand with an actual point of view.</h2>
+        <p class="post-excerpt">Most brands say a lot without saying anything. Approved language, safe palettes, campaign briefs that have had every interesting edge sanded off in three rounds of feedback. A brand with a genuine point of view stands out immediately. The audience does not always agree with it. But they remember it. In marketing, being remembered is most of the battle.</p>
+        <a href="#" class="read-more">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-post reveal">
+        <div class="post-meta">
+          <span class="post-cat">Food Marketing</span>
+          <span class="post-date">July 2024</span>
+        </div>
+        <h2 class="post-title">Why food marketing is the hardest brief to get right.</h2>
+        <p class="post-excerpt">Anyone can make food look good on a camera. That is not the hard part. The hard part is making someone feel like they are already there. The best restaurant and cafe marketing does not sell a product; it sells the memory of a moment that has not happened yet. The Smash Burger brief taught me more about desire-driven content than most textbooks on the topic.</p>
+        <a href="#" class="read-more">Read more &#8594;</a>
+      </article>
+
+      <article class="blog-post reveal">
+        <div class="post-meta">
+          <span class="post-cat">Film and Culture</span>
+          <span class="post-date">May 2024</span>
+        </div>
+        <h2 class="post-title">Film marketing is cultural strategy in disguise.</h2>
+        <p class="post-excerpt">A trailer is not just a preview; it is the first piece of creative that tells an audience whether this film is for them. The best film campaigns create a conversation before the movie even releases. Dune, Everything Everywhere All at Once, and Oppenheimer all succeeded partly because the marketing understood exactly who it was talking to. That kind of precision is what I want to build.</p>
+        <a href="#" class="read-more">Read more &#8594;</a>
+      </article>
+
+    </div>
+
+    <!-- Sidebar -->
+    <aside>
+      <!-- Fantastic Beasts nod -->
+      <div class="sidebar-widget reveal">
+        <p class="sidebar-title">Field Guide to Marketing Creatures</p>
+        <div class="beast-item"><span class="beast-icon">&#129412;</span><span class="beast-name">The Vanishing Brief</span></div>
+        <div class="beast-item"><span class="beast-icon">&#128031;</span><span class="beast-name">The Budget Niffler</span></div>
+        <div class="beast-item"><span class="beast-icon">&#128009;</span><span class="beast-name">The Algorithm Serpent</span></div>
+        <div class="beast-item"><span class="beast-icon">&#129411;</span><span class="beast-name">The Viral Occamy</span></div>
+        <div class="beast-item"><span class="beast-icon">&#127996;</span><span class="beast-name">The Stakeholder Phoenix</span></div>
+      </div>
+
+      <div class="sidebar-widget reveal">
+        <p class="sidebar-title">Currently Reading</p>
+        <p class="sidebar-text"><em>Positioning: The Battle for Your Mind</em> by Al Ries and Jack Trout. Still the clearest book written about what brand strategy actually means.</p>
+      </div>
+
+      <div class="sidebar-widget reveal">
+        <p class="sidebar-title">A Note</p>
+        <p class="sidebar-text">Attention is not the goal. Retention is. Getting someone to stop scrolling is easy. Getting them to come back tomorrow is the actual work.</p>
+      </div>
+
+      <div class="sidebar-widget reveal">
+        <p class="sidebar-title">Topics</p>
+        <div class="tag-list" style="gap:0.4rem;">
+          <span class="tag" style="border-color:rgba(201,168,76,0.28);color:var(--mist);">Growth</span>
+          <span class="tag" style="border-color:rgba(201,168,76,0.28);color:var(--mist);">Copywriting</span>
+          <span class="tag" style="border-color:rgba(201,168,76,0.28);color:var(--mist);">Strategy</span>
+          <span class="tag" style="border-color:rgba(201,168,76,0.28);color:var(--mist);">Film</span>
+          <span class="tag" style="border-color:rgba(201,168,76,0.28);color:var(--mist);">Fashion</span>
+          <span class="tag" style="border-color:rgba(201,168,76,0.28);color:var(--mist);">Food</span>
+          <span class="tag" style="border-color:rgba(201,168,76,0.28);color:var(--mist);">Analytics</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="footer-mini reveal" style="background:#0c0a0e;">
+    <div class="footer-name">Prapti Das</div>
+    <div class="footer-sub">Growth is a craft. Every campaign tells a story.</div>
+    <div class="footer-copy">&copy; 2025 Prapti Das &mdash; Bengaluru, India</div>
+  </footer>
+
+</div><!-- /page-blog -->
+
+<script src="scripts.js"></script>
+</body>
+</html>
